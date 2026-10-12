@@ -2,7 +2,9 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
 {
     "name": "C# (.NET) - Ollama",
-    "image": "mcr.microsoft.com/devcontainers/dotnet",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "onCreateCommand": "sudo apt-get update && sudo apt-get install -y zstd",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
